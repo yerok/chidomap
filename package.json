@@ -1,0 +1,38 @@
+{
+  "name": "chido_map",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@tanstack/react-query": "^5.0.0",
+    "@types/leaflet.awesome-markers": "^2.0.28",
+    "axios": "^1.7.9",
+    "leaflet": "^1.9.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1",
+    "react-redux": "^8.1.1",
+    "react-router-dom": "^6.14.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^8.48.0",
+    "@types/leaflet": "^1.9.4",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.4",
+    "eslint": "^8.48.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "globals": "^15.0.1",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
+  }
+}
