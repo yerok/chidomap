@@ -8,7 +8,8 @@ import { categoryStyles } from '../types/categoryStyles';
 import { useDispatch, useSelector } from 'react-redux';
 import { setAllCategories, setNoCategories, toggleCategoryFilter } from '../store/slices/filtersSlice';
 import { RootState } from "../store"; // Chemin vers le store
-
+import axios from 'axios';
+import { getGeojsonData, sendGeojsonData } from '../api/geojsonApi';
 
 
 
@@ -72,7 +73,6 @@ const createCustomIcon = (feature: Feature) => {
 }
 
 
-
 const fetchGeoJSONData = async (): Promise<FeatureCollection> => {
     const response = await fetch('/src/data/mistral.json'); // Remplacez par le chemin de votre fichier
     if (!response.ok) {
@@ -87,7 +87,6 @@ const fetchGeoJSONData = async (): Promise<FeatureCollection> => {
 
     return data;
 };
-
 
 
 
@@ -113,7 +112,6 @@ const MapComponent = () => {
     const handleFilterChange = (category: string) => {
         dispatch(toggleCategoryFilter(category));
     };
-
 
     const filterControl = L.Control.extend({
         onAdd: (map: L.Map) => {
@@ -224,13 +222,23 @@ const MapComponent = () => {
     useEffect(() => {
 
         const fetchData = async () => {
+
             if (!geojsonData) {
-                const data = await fetchGeoJSONData();
-                setGeojsonData(data); // Déclenchera un nouveau rendu
+                
+                let data = await getGeojsonData()
+                if (!data) {
+                    data = await fetchGeoJSONData();
+                } 
+                setGeojsonData(data) // Déclenchera un nouveau rendu
+
+
+                
+
             }
         };
         fetchData()
-    }, [geojsonData])
+    // }, [geojsonData])
+    }, [])
 
 
 
@@ -293,7 +301,6 @@ const MapComponent = () => {
 
 
                 try {
-
                     geoJsonLayer.addTo(map);
                     geojsonLayerRef.current = geoJsonLayer;
                 } catch (error) {
@@ -301,19 +308,11 @@ const MapComponent = () => {
 
                 }
 
-
             } catch (error) {
                 console.error('Error initializing the map:', error);
             }
         };
         initializeMap();
-
-        return () => {
-            // geojsonLayerRef.current?.remove();
-            // if (filterRef.current) {
-            //     mapRef.current?.removeControl(filterRef.current);
-            // }
-        };
 
     }, [geojsonData, selectedCategories])
 
