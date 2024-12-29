@@ -1,20 +1,54 @@
-import { createSlice } from '@reduxjs/toolkit';
+// filterSlice.ts
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-const filtersSlice = createSlice({
-  name: 'filters',
-  initialState: {
-    type: 'all', // Filtrer par type d'élément (restaurants, stations, etc.)
-    radius: 5000, // Rayon en mètres
-  },
+
+const categories = [
+    "Citernes d’eau",
+    "Vétérinaire",
+    "Point d’Eau",
+    "Électricité par endroits",
+    "Réseau mobile Orange",
+    "Réseau mobile SFR",
+    "Réseau mobile Bouygues",
+    "Internet Wifi",
+    "Soins",
+    "DAB",
+    "Commerces / Approvisionnement",
+    "Carburant",
+    "Village pas ravitaillé",
+    "Transports",
+    "Informations",
+];
+
+interface FilterState {
+  selectedCategories: string[];
+}
+
+const initialState: FilterState = {
+  selectedCategories: [],
+};
+
+const filterSlice = createSlice({
+  name: 'filter',
+  initialState,
   reducers: {
-    setType: (state, action) => {
-      state.type = action.payload;
+    toggleCategoryFilter: (state, action: PayloadAction<string>) => {
+      const category = action.payload;
+      if (state.selectedCategories.includes(category)) {
+        state.selectedCategories = state.selectedCategories.filter(c => c !== category);
+      } else {
+        state.selectedCategories.push(category);
+      }
     },
-    setRadius: (state, action) => {
-      state.radius = action.payload;
+    setAllCategories: (state) => {
+      state.selectedCategories = [];
     },
+    setNoCategories: (state) => {
+      state.selectedCategories = categories
+      
+    }
   },
 });
 
-export const { setType, setRadius } = filtersSlice.actions;
-export default filtersSlice.reducer;
+export const { toggleCategoryFilter, setAllCategories, setNoCategories } = filterSlice.actions;
+export default filterSlice.reducer;

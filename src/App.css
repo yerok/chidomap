@@ -40,3 +40,22 @@
 .read-the-docs {
   color: #888;
 }
+
+
+  .custom-control {
+    background: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+  }
+  .custom-select {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 14px;
+    outline: none;
+  }
+  .custom-select:focus {
+    border-color: #007bff;
+  }
