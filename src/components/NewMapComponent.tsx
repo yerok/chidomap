@@ -10,6 +10,9 @@ import { setAllCategories, setNoCategories, toggleCategoryFilter } from '../stor
 import { RootState } from "../store"; // Chemin vers le store
 import axios from 'axios';
 import { downVote, getGeojsonData, sendGeojsonData, upVote } from '../api/geojsonApi';
+import FeaturePopup from './PopUpComponent';
+import { createRoot } from 'react-dom/client';
+import React from 'react';
 
 
 
@@ -226,7 +229,7 @@ const MapComponent = () => {
             if (!geojsonData) {
 
                 let data = await getGeojsonData()
-                
+
                 if (data.features.length == 0) {
                     data = await fetchGeoJSONData();
                     sendGeojsonData(data)
@@ -253,6 +256,7 @@ const MapComponent = () => {
         };
 
         const initializeMap = async () => {
+
 
             if (!filterRef.current) {
 
@@ -289,87 +293,227 @@ const MapComponent = () => {
                     onEachFeature: (feature, layer) => {
                         if (feature.properties && feature.properties.name && layer) {
 
-                            console.log('feature');
-                            console.log(feature);
-                            
-                            console.log('feature.properties');
-                            console.log(feature.properties);
-                            
-                            const upvotes = feature.properties.upvotes || 0;
-                            const downvotes = feature.properties.downvotes || 0;
+                            const updatePopup = ( ) => {
 
-                            const featureId = (feature as any)._id; // Désactiver temporairement la vérification de type
+                                // const featureId = (feature as any)._id; // Désactiver temporairement la vérification de type
+                                const container = document.createElement('div'); // Conteneur pour le composant React
+    
+                                // const container = document.getElementById('root');
+                                const root = createRoot(container!); // Assurez-vous que container n'est pas null
+    
+                                root.render(
+                                        <FeaturePopup feature={feature} onUpvote={upVote} onDownvote={downVote} />,
+                                );
+                                // ReactDOM.render(
+                                //     container
+                                // );
+    
+                                // Attacher la popup à la layer
+                                layer.bindPopup(container);
+                            }
 
-                            // Contenu du popup avec les boutons de vote
-                            const popupContent = `
-                            <div>
-                                <h3>${feature.properties.name}</h3>
-                                <p>${feature.properties.description}</p>
-                                <div style="display: flex; justify-content: space-around; align-items: center; margin-top: 10px;">
-                                    <button class="upvote-btn" data-id="${featureId}" style="background: none; border: none; cursor: pointer;">
-                                        <i class="fas fa-thumbs-up" style="color: green; font-size: 18px;"></i>
-                                        <span class="upvote-count">${upvotes}</span>
-                                    </button>
-                                    <button class="downvote-btn" data-id="${featureId}" style="background: none; border: none; cursor: pointer;">
-                                        <i class="fas fa-thumbs-down" style="color: red; font-size: 18px;"></i>
-                                        <span class="downvote-count">${downvotes}</span>
-                                    </button>
-                                </div>
-                            </div>
-                        `;
 
-                            // Liaison du contenu à la popup
-                            layer.bindPopup(popupContent);
+                            updatePopup()
+                            // const attachEventHandlers = (feature: Feature<Geometry, GeoJsonProperties>, layer: L.Layer) => {
+                            //     const popupElement = document.querySelector('.leaflet-popup-content');
+
+                            //     if (popupElement) {
+                            //         const upvoteButton = popupElement.querySelector('.upvote-btn');
+                            //         const downvoteButton = popupElement.querySelector('.downvote-btn');
+
+                            //         if (upvoteButton) {
+                            //             upvoteButton.addEventListener('click', async (e) => {
+                            //                 try {
+                            //                     const upVoteCountDB = await upVote(featureId)
+
+                            //                     if (feature.properties) {
+                            //                         console.log(feature.properties.upvotes);
+                            //                         feature.properties.upvotes += 1
+                            //                     }
+                            //                     updatePopup();
+                            //                 } catch (error) {
+                            //                     console.error('Failed to upvote:', error);
+                            //                 }
+                            //             });
+                            //         }
+
+                            //         if (downvoteButton) {
+                            //             downvoteButton.addEventListener('click', async (e) => {
+                            //                 try {
+
+                            //                     const downVoteCountDB = await downVote(featureId)
+
+                            //                     if (feature.properties) {
+                            //                         console.log(feature.properties.upvotes);
+                            //                         feature.properties.downvotes += 1
+                            //                     }
+                            //                     updatePopup();
+                            //                 } catch (error) {
+                            //                     console.error('Failed to downvote:', error);
+                            //                 }
+                            //             });
+                            //         }
+                            //     }
+                            // };
+
+                            // const updatePopup = () => {
+
+                            //     if (feature.properties) {
+
+
+                            //         const upvotes = feature.properties.upvotes || 0;
+                            //         const downvotes = feature.properties.downvotes || 0;
+                            //         const featureId = (feature as any)._id; // Désactiver temporairement la vérification de type
+
+                            //         // Contenu du popup avec les boutons de vote
+                            //         const popupContent = `
+                            //         <div>
+                            //             <h3>${feature.properties.name}</h3>
+                            //             <p>${feature.properties.description}</p>
+                            //             <div style="display: flex; justify-content: space-around; align-items: center; margin-top: 10px;">
+                            //                 <button class="upvote-btn" data-id="${featureId}" style="background: none; border: none; cursor: pointer;">
+                            //                     <i class="fas fa-thumbs-up" style="color: green; font-size: 18px;"></i>
+                            //                     <span class="upvote-count">${upvotes}</span>
+                            //                 </button>
+                            //                 <button class="downvote-btn" data-id="${featureId}" style="background: none; border: none; cursor: pointer;">
+                            //                     <i class="fas fa-thumbs-down" style="color: red; font-size: 18px;"></i>
+                            //                     <span class="downvote-count">${downvotes}</span>
+                            //                 </button>
+                            //             </div>
+                            //         </div>
+                            //     `;
+                            //     attachEventHandlers(feature, layer);
+                            //     layer.bindPopup(popupContent);
+                            //     }
+                            // }
+
+                            // Crée une popup initiale
+                            // const popup = L.popup().setContent('<div>Loading...</div>');
+                            // layer.bindPopup(popup);
+
+                            // Met à jour la popup avec le contenu réel
+                            // updatePopup();
+
+                            // const attachEventHandlers = (feature: Feature<Geometry, GeoJsonProperties>, layer: L.Layer) => {
+                            //     const popupElement = document.querySelector('.leaflet-popup-content');
+
+                            //     if (popupElement) {
+                            //         const upvoteButton = popupElement.querySelector('.upvote-btn');
+                            //         const downvoteButton = popupElement.querySelector('.downvote-btn');
+
+                            //         if (upvoteButton) {
+                            //             upvoteButton.addEventListener('click', async (e) => {
+                            //                 try {
+                            //                     const upVoteCountDB = await upVote(featureId)
+
+                            //                     if (feature.properties) {
+                            //                         console.log(feature.properties.upvotes);
+                            //                         feature.properties.upvotes += 1
+                            //                     }
+                            //                     updatePopup();
+                            //                 } catch (error) {
+                            //                     console.error('Failed to upvote:', error);
+                            //                 }
+                            //             });
+                            //         }
+
+                            //         if (downvoteButton) {
+                            //             downvoteButton.addEventListener('click', async (e) => {
+                            //                 try {
+
+                            //                     const downVoteCountDB = await downVote(featureId)
+
+                            //                     if (feature.properties) {
+                            //                         console.log(feature.properties.upvotes);
+                            //                         feature.properties.downvotes += 1
+                            //                     }
+                            //                     updatePopup();
+                            //                 } catch (error) {
+                            //                     console.error('Failed to downvote:', error);
+                            //                 }
+                            //             });
+                            //         }
+                            //     }
+                            // };
 
                             // Gestion des clics sur les boutons après ouverture du popup
-                            layer.on("popupopen", () => {
+                            // layer.on("popupopen", () => {
 
-                                const popupElement = layer.getPopup()?.getElement();
-                                if (!popupElement) return; // Arrête si la popup n'existe pas
+                            //     const popupElement = layer.getPopup()?.getElement();
+                            //     if (!popupElement) return; // Arrête si la popup n'existe pas
 
-                                // Boutons dans la popup
-                                const upvoteButton = popupElement.querySelector(".upvote-btn");
-                                const downvoteButton = popupElement.querySelector(".downvote-btn");
+                            //     // Boutons dans la popup
+                            //     const upvoteButton = popupElement.querySelector(".upvote-btn");
+                            //     const downvoteButton = popupElement.querySelector(".downvote-btn");
 
-                                // Gestion de l'upvote
-                                if (upvoteButton) {
+                            //     // Gestion de l'upvote
+                            //     if (upvoteButton) {
 
-                                    upvoteButton.addEventListener("click", async () => {
-                                        const id = upvoteButton.getAttribute("data-id");
-                                        try {
-                                            const upVoteCountDB = await upVote(featureId)
-                                            const upvoteCount = upvoteButton.querySelector("span");
+                            //         upvoteButton.addEventListener("click", async () => {
+                            //             const id = upvoteButton.getAttribute("data-id");
+                            //             try {
+                            //                 const upVoteCountDB = await upVote(featureId)
 
-                                            if (upvoteCount) {
-                                                upvoteCount.textContent = upVoteCountDB; // Mise à jour du compteur
-                                            }
-                                        } catch (error) {
-                                            console.error("Erreur lors de l'upvote :", error);
-                                        }
-                                    });
-                                }
+                            //                 if (feature.properties) {
+                            //                     console.log(feature.properties.upvotes);
+                            //                     feature.properties.upvotes += 1
+                            //                 }
 
-                                if (downvoteButton) {
+                            //                 updatePopup();
 
-                                    // Gestion du downvote
-                                    downvoteButton.addEventListener("click", async () => {
-                                        const id = downvoteButton.getAttribute("data-id");
-                                        try {
+                            //                 // const upvoteCount = upvoteButton.querySelector("span");
+                            //                 // upvotes += 1
+                            //                 // if (upvoteCount) {
+                            //                 //     upvoteCount.textContent = upVoteCountDB; // Mise à jour du compteur
+                            //                 // }
 
-                                            const downVoteCountDB = await downVote(featureId)
-                                            const downvoteCount = downvoteButton.querySelector("span");
+                            //             } catch (error) {
+                            //                 console.error("Erreur lors de l'upvote :", error);
+                            //             }
+                            //         });
+                            //     }
 
-                                            if (downvoteCount) {
+                            // if (downvoteButton) {
 
-                                                downvoteCount.textContent = downVoteCountDB; // Mise à jour du compteur
-                                            }
-                                        } catch (error) {
-                                            console.error("Erreur lors du downvote :", error);
-                                        }
-                                    }
-                                    )
-                                }
-                            })
+                            //     // Gestion du downvote
+                            //     downvoteButton.addEventListener("click", async () => {
+                            //         try {
+
+                            //             // const downVoteCountDB = await downVote(featureId)
+                            //             // const downvoteCount = downvoteButton.querySelector("span");
+
+                            //             // if (downvoteCount) {
+                            //             //     downvoteCount.textContent = downVoteCountDB; // Mise à jour du compteur
+
+                            //             // }
+                            //             if (feature.properties) {
+                            //                 console.log(feature.properties.upvotes);
+                            //                 feature.properties.downvotes += 1
+                            //             }
+
+                            //             updatePopup();
+
+                            //         } catch (error) {
+                            //             console.error("Erreur lors du downvote :", error);
+                            //         }
+                            //     }
+                            //     )
+                            // }
+                            // Nettoyage : Supprimer les écouteurs lorsqu'une couche est supprimée
+                            // layer.on('remove', () => {
+                            //     console.log('remove');
+
+                            //     layer.off('popupopen'); // Supprime les anciens gestionnaires
+                            // });
+
+                            // // Gérer les clics sur le popup
+                            // layer.on('popupopen', () => {
+
+                            //     console.log('attach');
+
+                            //     attachEventHandlers(feature, layer);
+                            // });
+                            // })
                         }
                     }
                 }
