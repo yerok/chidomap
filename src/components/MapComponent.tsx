@@ -41,7 +41,7 @@ const MapComponent = () => {
                     width: 30px;
                     height: 30px;
                     border-radius: 50%; /* Cercle */
-                    background-color: white; /* Couleur de fond */
+                    background-color: #ffffff; /* Couleur de fond */
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -64,7 +64,7 @@ const MapComponent = () => {
     }
     
     const fetchGeoJSONData = async (): Promise<FeatureCollection> => {
-        const response = await fetch('/src/data/mistral.json'); // Remplacez par le chemin de votre fichier
+        const response = await fetch('/src/data/partial_chido_mayotte.json'); // Remplacez par le chemin de votre fichier
         if (!response.ok) {
             throw new Error('Failed to fetch GeoJSON data');
         }

@@ -24,5 +24,6 @@ dist-ssr
 *.sw?
 
 data
+!data/partial_chido_mayotte.json
 misc
 tmp
