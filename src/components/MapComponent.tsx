@@ -149,6 +149,7 @@ const MapComponent = () => {
 
                 const filterFunc = filterControl(map, handleFilterChange, handleSetAllCategories, handleSetNoCategories)
                 const filter = new filterFunc
+                filterRef.current = filter
                 
                 map.addControl(filter);
                 L.control.layers(baseMaps).addTo(map);
