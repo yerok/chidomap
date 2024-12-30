@@ -23,7 +23,10 @@ dist-ssr
 *.sln
 *.sw?
 
-data
+# Ignorer tout dans le dossier data
+data/*
+
+# Inclure uniquement partial_chido_mayotte.json
 !data/partial_chido_mayotte.json
 misc
 tmp
