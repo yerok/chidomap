@@ -14,57 +14,53 @@ import { createRoot } from 'react-dom/client';
 import { filterControl } from './filterControl'
 
 
-
-const getIcon = (category: Category): { className: string; iconName: string; color: string } => {
-
-    if (category) {
-        const { className, iconName, color } = categoryStyles[category] || {};
-        return { className, iconName, color }
-    } else return categoryStyles['Misc']
-};
-
-
-const createCustomIcon = (feature: Feature) => {
-
-    if (feature.properties && feature.properties.category) {
-
-
-        const icon = getIcon(feature.properties.category)
-
-        const customIcon = L.divIcon({
-            className: 'custom-div-icon',
-            html: `<div style="text-align:center;">
-                <i class="fas ${icon.className}" style="font-size: 24px; color: ${icon.color}"></i>
-                </div>`,
-            iconSize: [30, 42],
-            iconAnchor: [15, 42],
-        });
-
-        return customIcon
-
-    }
-}
-
-
-const fetchGeoJSONData = async (): Promise<FeatureCollection> => {
-    const response = await fetch('/src/data/mistral.json'); // Remplacez par le chemin de votre fichier
-    if (!response.ok) {
-        throw new Error('Failed to fetch GeoJSON data');
-    }
-    const data = await response.json();
-
-    // Validation de base pour s'assurer que les données sont conformes
-    if (data.type !== "FeatureCollection" || !Array.isArray(data.features)) {
-        throw new Error('Invalid GeoJSON format');
-    }
-
-    return data;
-};
-
-
-
 const MapComponent = () => {
 
+    const getIcon = (category: Category): { className: string; iconName: string; color: string } => {
+
+        if (category) {
+            const { className, iconName, color } = categoryStyles[category] || {};
+            return { className, iconName, color }
+        } else return categoryStyles['Misc']
+    };
+    
+    
+    const createCustomIcon = (feature: Feature) => {
+    
+        if (feature.properties && feature.properties.category) {
+    
+    
+            const icon = getIcon(feature.properties.category)
+    
+            const customIcon = L.divIcon({
+                className: 'custom-div-icon',
+                html: `<div style="text-align:center;">
+                    <i class="fas ${icon.className}" style="font-size: 24px; color: ${icon.color}"></i>
+                    </div>`,
+                iconSize: [30, 42],
+                iconAnchor: [15, 42],
+            });
+    
+            return customIcon
+    
+        }
+    }
+    
+    const fetchGeoJSONData = async (): Promise<FeatureCollection> => {
+        const response = await fetch('/src/data/mistral.json'); // Remplacez par le chemin de votre fichier
+        if (!response.ok) {
+            throw new Error('Failed to fetch GeoJSON data');
+        }
+        const data = await response.json();
+    
+        // Validation de base pour s'assurer que les données sont conformes
+        if (data.type !== "FeatureCollection" || !Array.isArray(data.features)) {
+            throw new Error('Invalid GeoJSON format');
+        }
+    
+        return data;
+    };
+    
     const baseMaps = {
         "OpenStreetMap": L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -149,7 +145,6 @@ const MapComponent = () => {
 
         const initializeMap = async () => {
 
-
             if (!filterRef.current) {
 
                 const filterFunc = filterControl(map, handleFilterChange, handleSetAllCategories, handleSetNoCategories)
@@ -162,17 +157,11 @@ const MapComponent = () => {
                 // Par défaut OSM
                 baseMaps['OpenStreetMap'].addTo(map) 
             }
-
-
-
             try {
-
 
                 if (geojsonLayerRef.current) {
                     geojsonLayerRef.current.remove();
                 }
-
-
 
                 const geoJsonLayer = L.geoJSON(geojsonData, {
                     filter: filterFeatures,
@@ -225,7 +214,6 @@ const MapComponent = () => {
     }, [geojsonData, selectedCategories])
 
 
-
     return (
         <div>
             <div style={{ display: "flex" }}>
@@ -237,10 +225,8 @@ const MapComponent = () => {
                     maxBounds={mayotteBounds} // Limiter les déplacements au périmètre de Mayotte
                     style={{
                         width: '1000px', height: '1000px'
-
-                    }} // Ajuste ces valeurs selon tes besoins
+                    }} 
                     maxBoundsViscosity={1.0} // Empêcher complètement de sortir des limites
-                    // layers={baseMaps["Dark Mode"]}
                 >
                     {/* Ajouter la couche de tuiles */}
                     <TileLayer
