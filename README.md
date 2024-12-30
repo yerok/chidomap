@@ -1,51 +1,75 @@
-# React + TypeScript + Vite
+Voici un README.md complet et détaillé pour ton projet, basé sur les informations que tu m'as fournies :
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# Chido Map - Cartographie Interactive de Mayotte
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Chido Map est une application web de cartographie interactive conçue pour fournir des informations géolocalisées précises et fiables sur la situation à Mayotte suite au passage de Chido.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies utilisées
 
-- Configure the top-level `parserOptions` property like this:
+- **Langages** : TypeScript
+- **Frameworks et bibliothèques** : React, Leaflet, Express
+- **Outils** : Vite, ESLint
+- **Base de données** : MongoDB
+- **Services** : OpenStreetMaps
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Installation
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Prérequis
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# chidomap
+- **npm** 
+- **le serveur backend qui tourne**
+- **MongoDB** 
+
+### Étapes d'installation
+
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/votre-utilisateur/chido-map.git
+   cd chido-map
+   ```
+
+2. Installez les dépendances :
+   ```bash
+   npm install
+   ```
+
+3. Configurez la base de données :
+   - Assurez-vous que MongoDB est installé et en cours d'exécution.
+   - Configurez l'URL du backend dans le fichier `src/api/geojsonApi.ts`. Par défaut, l'URL est `http://127.0.0.1:3000/api`.
+
+4. Lancez le serveur de développement :
+   ```bash
+   npm run dev
+   ```
+
+5. Accédez à l'application :
+   Ouvrez votre navigateur et accédez à `http://localhost:5173`.
+
+---
+
+## Utilisation
+
+### Chargement des données
+
+L'application tente de charger un fichier GeoJSON depuis la base de données MongoDB. Si elle n'y parvient pas, elle récupère les données directement dans le fichier `partial_chido_map.json` (incomplet, nécessite d'ajouter la catégorie de chaque point manquant ) 
+
+
+### Dossiers
+
+- **`/src`** : Contient le code source de l'application.
+  - **`/api`** : Gestion des appels API.
+  - **`/components`** : Composants React réutilisables.
+  - **`/data`** : Fichiers GeoJSON locaux.
+  - **`/store`** : Gestion de l'état avec Redux.
+  - **`/types`** : Définitions TypeScript.
+- **`/public`** : Fichiers statiques (ex : favicon, images).
+- **`/node_modules`** : Dossier contenant toutes les dépendances du projet.
+
+---
+
