@@ -1,0 +1,2858 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.25879,
+          -12.781251
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Barges",
+        "description": "1er départ grande terre : 6h30\nDernier départ grande terre : 18h30\n--\n1er départ petite terre : 6h\nDernier départ petite : 18h",
+        "category": "Transports"
+      },
+      "id": "M5NTU"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.232711,
+          -12.778342
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Barges",
+        "description": "1er départ grande terre : 6h30\nDernier départ grande terre : 18h30\n--\n1er départ petite terre : 6h\nDernier départ petite : 18h",
+        "category": "Transports"
+      },
+      "id": "YwMTM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.246141,
+          -12.778677
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Barges",
+        "description": "1er départ grande terre : 6h30\nDernier départ grande terre : 18h30\n--\n1er départ petite terre : 6h\nDernier départ petite : 18h",
+        "category": "Transports"
+      },
+      "id": "I0MjU"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.10098,
+          -12.903555
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Hagnoundrou pas encore ravitaillé",
+        "description": "Info du 22/12/2024 sur discord #hangnoundrou",
+        "category": "Village pas ravitaillé"
+      },
+      "id": "Y0NjI"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.221078,
+          -12.774325
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Kawéni village et ZI toujours pas d'eau depuis 7 jours",
+        "description": "Source : https://www.facebook.com/groups/391772269063234/permalink/1121829276057526/",
+        "category": "Village pas ravitaillé"
+      },
+      "id": "E0NDg"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.093813,
+          -12.900553
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Toujours d'eau ni de nourriture distribuée",
+        "description": "Moinatrindri (source : discord channel mwanatrindri)",
+        "category": "Village pas ravitaillé"
+      },
+      "id": "A2NTQ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.232545,
+          -12.757363
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Station essence (Majicavo)",
+        "description": "7h-17h",
+        "category": "Carburant"
+      },
+      "id": "kyNDc"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.154195,
+          -12.934419
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Station essence Chirongui",
+        "description": "7h-17h",
+        "category": "Carburant"
+      },
+      "id": "QyMTE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.131879,
+          -12.793459
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Station essence combani",
+        "description": "30l Max",
+        "category": "Carburant"
+      },
+      "id": "kzOTg"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.122153,
+          -12.723614
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Station essence Dzoumogné",
+        "category": "Carburant"
+      },
+      "id": "E3MDA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.224128,
+          -12.76971
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Station essence Kaweni (réquisitionnée)",
+        "description": "7h-17h\n\nLa station de Kawéni est entièrement réservée aux services qui portent assistance\nà la population et participent aux opérations de secours.",
+        "category": "Carburant"
+      },
+      "id": "Q1ODA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.270549,
+          -12.792459
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Station essence petite terre",
+        "description": "7h-17h",
+        "category": "Carburant"
+      },
+      "id": "kwNDA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.208778,
+          -12.806259
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Station essence Tsoundzou",
+        "description": "7h-17h",
+        "category": "Carburant"
+      },
+      "id": "k4NTI"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.225818,
+          -12.785256
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Baobab (Cavani) : CB et espèces",
+        "description": "Espèces et CB",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "M5NjI"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.131021,
+          -12.79299
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Carrefour (combani) : CB & espèces",
+        "description": "Source : communiqué officiel du préfet en date du 21/12/2024",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "ExNjU"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.231555,
+          -12.756772
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Carrefour (Majikavo) : CB et espèces",
+        "description": "Espèces et cartes bleues",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "k0NjA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.27763,
+          -12.782167
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Carrefour Market : CB & espèces",
+        "description": "CB & espèces",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "g0NzE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.27682,
+          -12.787979
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Distribution de denrée (Stade labattoir)",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "Q5OTA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.192982,
+          -12.907448
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Douka Bé (Bandrélé)",
+        "description": "8h-12h / 14h-17h",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "g1ODE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.22935,
+          -12.756497
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Douka Bé (Hauts Vallon) : espèces",
+        "description": "Source : communiqué officiel préfet",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "M4NjA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.207324,
+          -12.737682
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Douka Bé (Koungou) : espèces  + CB",
+        "description": "Source : communiqué officiel du préfet en date du 21/12/2024",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "g2OTI"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.221835,
+          -12.781725
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Douka Bé Cavani (espèces)",
+        "description": "Source : communiqué officiel du préfet en date du 22/12/2024",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "cxMTU"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.189828,
+          -12.844544
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Douka Bé Iloni",
+        "description": "Source : https://la1ere.francetvinfo.fr/mayotte/cyclone-chido-etat-des-reseaux-stations-service-et-commerces-ouverts-les-informations-pratiques-a-retenir-ce-samedi-a-mayotte-1547488.html?sfnsn=scwspwa",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "k1MTE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.104169,
+          -12.926449
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Douka Bé Mzouazia",
+        "description": "Ouvert à partir du 24/12/2024. Source facebook mairie de Bouéni.",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "AwMDk"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.215183,
+          -12.800351
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Douka Bé Passamainty",
+        "description": "Source : communiqué officiel du préfet en date du 22/12/2024",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "I3NTE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.224909,
+          -12.772112
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "HD (Kawéni) : CB et espèces",
+        "description": "CB & Espèces",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "g2MjE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.257339,
+          -12.781971
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Jeje labattoir",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "Q2OTQ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.163642,
+          -12.735804
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Jeje Longoni",
+        "description": "Espèces",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "g5MTE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.229651,
+          -12.757282
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Manek Market (Hauts Vallon) : Espèces",
+        "description": "Source : communiqué officiel préfet du 21/12/2024",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "k3NTk"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.120544,
+          -12.726749
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Mayotte Tropic (Dzoumogné) ",
+        "description": "CB & espèces",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "YwMjY"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.230839,
+          -12.777644
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Shopi Place Mariage (Mamoudzou)",
+        "description": "Source : communiqué officiel du préfet en date du 22/12/2024",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "M1MDQ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.275018,
+          -12.796828
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "SNIE (Pamandzi)",
+        "description": "Espèces",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "gyNzY"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.100779,
+          -12.847892
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Sodiash (Sada)",
+        "description": "Source : communiqué officiel préfet du 21/12/2024",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "EzMzE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.275111,
+          -12.78681
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Sodicash",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "IwNzM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.12156,
+          -12.840107
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Sodicash (Chiconi)",
+        "description": "Pack d'eau limité à 2/Personnes",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "QxNjA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.120184,
+          -12.722694
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Sodicash (Dzoumogné) : espèces",
+        "description": "Source : communiqué du préfet en date du 21/12/2024",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "U3NDU"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.111647,
+          -12.954137
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Sodicash (Kani-Kéli)",
+        "description": "Source : communiqué officiel préfet du 21/12/2024",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "E2NjE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.225644,
+          -12.775656
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Sodicash (Kawéni) : espèces",
+        "description": "Source : communiqué officiel du préfet en date du 21/12/2024",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "cxMTg"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.232395,
+          -12.780966
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Sodicash (Rue du Commerce) : CB & espèces",
+        "description": "Source : communiqué officiel du préfet du 21/12/2024",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "I5OTc"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.192575,
+          -12.913228
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Sodicash Bandrélé",
+        "description": "Source : François par mail.",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "U5MDE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.156925,
+          -12.92293
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Sodicash malamani",
+        "description": "source : communiqué officiel du préfet en date du 22/12/2024",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "MwNzM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.230184,
+          -12.757894
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Sodifram (Hauts-Vallon) : espèces",
+        "description": "Espèces",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "A2NDY"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.224919,
+          -12.775068
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Sodifram (Kawéni) - Espèces",
+        "description": "Espèces",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "I4NTI"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.274441,
+          -12.796469
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Sodifram (Pamandzi)",
+        "description": "Espèces",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "M4Nzk"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.112739,
+          -12.789812
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Sodifram (Tsingoni)",
+        "description": "Espèces et chèques",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "gxMDM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.210698,
+          -12.801135
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Sodifram Passamainty (CB & espèces)",
+        "description": "Source : communiqué préfet du 21/12/24",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "E1NjA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.225531,
+          -12.785227
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Somaco (Baobab) : espèces",
+        "description": "source : commniqué officiel préfet du 21/12/2024",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "I1ODA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.226314,
+          -12.767761
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Somaco (Kawéni)",
+        "description": "Espèces",
+        "category": "Commerces / Approvisionnement"
+      },
+      "id": "I1MzI"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.226333,
+          -12.761923
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Banque populaire (Kawéni)",
+        "category": "DAB"
+      },
+      "id": "IzMDk"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.22452,
+          -12.775622
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Caisse d'épargne (Kawéni)",
+        "category": "DAB"
+      },
+      "id": "I4MTY"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.228999,
+          -12.756908
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Crédit Agricole (Hauts-Vallon)",
+        "category": "DAB"
+      },
+      "id": "A3MDg"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.229503,
+          -12.75668
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Crédit Agricole (Hauts-Vallon)",
+        "category": "DAB"
+      },
+      "id": "M3NTg"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.192835,
+          -12.911364
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Crédit agricole bandrélé",
+        "description": "Fonctionne",
+        "category": "DAB"
+      },
+      "id": "A4NTY"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.192993,
+          -12.910896
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "DAB laposte (bandrélé)",
+        "description": "Source françois par mail",
+        "category": "DAB"
+      },
+      "id": "g2OTk"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.229085,
+          -12.756578
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Société Générale BFC (Hauts Vallon)",
+        "category": "DAB"
+      },
+      "id": "I3NTQ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.208668,
+          -12.80113
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "Bonsoir,\nPour information le cabinet Infirmier de Passamainty est ouvert tous les jours de 9h à 15h pour les soins de proximité du village.\nSoins gratuits, pas d'identité demandée, simplement un service rendu à la population.\nSi vous pouviez mettre votre carte à jour... merci !\nBien à vous,\nClément \nInfirmier libéral",
+        "name": "Cabinet infirmier passaminty",
+        "category": "Soins"
+      },
+      "id": "Y3Nzc"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.223401,
+          -12.782007
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Cabinet vétérinaire de cavani",
+        "_umap_options": {
+          "iconUrl": "/uploads/pictogram/veterinary.svg"
+        },
+        "description": "Ouvert du lundi au samedi de 9h à 12h\nSource Facebook",
+        "category": "Vétérinaire"
+      },
+      "id": "E4MjM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.111811,
+          -12.719125
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Centre Hospitalier de Dzoumogné",
+        "category": "Soins"
+      },
+      "id": "Y5MjA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.176074,
+          -12.837031
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Maison médicale",
+        "category": "Soins"
+      },
+      "id": "EwNDc"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.230195,
+          -12.78444
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "MSP du Lagon (M'Gombani)",
+        "description": "Maison de santé",
+        "category": "Soins"
+      },
+      "id": "c3OTk"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.277094,
+          -12.799226
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Pharmacie de Pamandzi",
+        "description": "Akram BOUSSAIDI <akram.boussaidi@icloud.com>\n\t\nSat, Dec 21, 2:33 PM (2 days ago)\n\t\nto me\nBonjour merci de rajouter la pharmacie de Pamandzi, nous sommes ouverts le temps de la crise du lundi au samedi de 8h00 à 12h30 et de 14h00 à 18h30.\n\nPour l’instant, pas de téléphone où nous contacter, mais dès que je trouve un numéro ou que notre ligne refonctionne, je vous tiendrai informé.\n\nBien cordialement.",
+        "category": "Soins"
+      },
+      "id": "k4MjM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.130774,
+          -12.841281
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Pharmacie des cocotiers (Kahani)",
+        "category": "Soins"
+      },
+      "id": "M4Mzk"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.104869,
+          -12.926959
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Pharmacie des îles (Mzouasia)",
+        "category": "Soins"
+      },
+      "id": "I4NDQ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.192344,
+          -12.913419
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Pharmacie des Tortues (Bandrélé)",
+        "description": "9h-12h",
+        "category": "Soins"
+      },
+      "id": "A2Nzk"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.229318,
+          -12.784552
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Pharmacie du Lagon (M'Gombani)",
+        "category": "Soins"
+      },
+      "id": "kxNTE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.153087,
+          -12.929832
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Pharmacie du Sud (Mramadoudou)",
+        "category": "Soins"
+      },
+      "id": "A3OTA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.223602,
+          -12.771724
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Pharmacie Vanille (Mamoudzou)",
+        "description": "Source facebook pharmacie vanille :\n\n\"📢 Chers patients,\nNous vous informons que votre pharmacie est bien ouverte et prête à vous accueillir pour toutes vos ordonnances et vos besoins en médicaments. 💊\n➡️ Le cabinet du Dr. Bui est également ouvert pour les consultations.\n➡️ Le paiement par carte bancaire (CB) est disponible à la pharmacie.\nDe plus, nous avons mis en place une initiative solidaire :\n🩺 Un carton est à votre disposition pour collecter vos dons de médicaments inutilisés ou de matériel médical.\nCes dons seront transmis aux infirmiers, qui les utiliseront pour soigner les personnes blessées dans le besoin. 🙏\nMerci pour votre soutien et votre générosité. Nous restons à votre disposition pour toute question.\nPrenez soin de vous,\nL’équipe de la pharmacie Vanille\"",
+        "category": "Soins"
+      },
+      "id": "k5OTI"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.183927,
+          -12.842583
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "𝐏𝐨𝐬𝐭𝐞 𝐌𝐞́𝐝𝐢𝐜𝐚𝐥 𝐠𝐫𝐚𝐭𝐮𝐢𝐭 𝐞𝐬𝐭 𝐨𝐮𝐯𝐞𝐫𝐭 𝐚̀ 𝐥𝐚 𝐌𝐏𝐓 𝐝𝐞 𝐃𝐞𝐦𝐛𝐞́𝐧𝐢",
+        "description": "La Ville de Dembéni informe ses habitants de l’ouverture d’un Poste médical temporaire à la Maison Pour Tous (MPT), en collaboration avec les ONG : GIS France, PHF, FAUSI et PICA.\n✅ Informations pratiques :\n• Lieu : Maison Pour Tous (MPT) de Dembéni\n• Horaires : Tous les jours, de 8h à 18h\n• Consultations : Gratuites et sans rendez-vous\n• Équipe : 17 professionnels de santé, dont 2 médecins\n👉 Ce service est accessible à toutes et tous, sans distinction.\nMonsieur le Maire SAIDI Moudjibou et son équipe municipale remercient chaleureusement l’État, les équipes des ONG et les professionnels mobilisés pour leur engagement auprès de la population.",
+        "category": "Soins"
+      },
+      "id": "Q3NjI"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.150032,
+          -12.902091
+        ],
+        "type": "Point"
+      },
+      "properties": {},
+      "id": "AyNTg"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.090079,
+          -12.922724
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Accès internet starlink 24h/24h",
+        "description": "Wifi au niveau du collègede Bouéni",
+        "category": "Internet Wifi"
+      },
+      "id": "Q1MDI"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.230474,
+          -12.755992
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Clap production Wifi (starlink) - Haut Vallons",
+        "description": "Nom wifi : clap starlink\nMot de passe 14122024",
+        "category": "Internet Wifi"
+      },
+      "id": "Y0OTM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.07342,
+          -12.686973
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Coco beach (Wifi) - Hamjago",
+        "description": "Position du point approxiamtive (renseignez vous auprès de la population)",
+        "category": "Internet Wifi"
+      },
+      "id": "YzMzU"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.191016,
+          -12.847013
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Collège de Dembéni (Wifi)",
+        "category": "Internet Wifi"
+      },
+      "id": "k1NTY"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.167327,
+          -12.72554
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Connexion au port de longoni",
+        "description": "Probablement internet mobile",
+        "category": "Internet Wifi"
+      },
+      "id": "YyNzU"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.102892,
+          -12.844748
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Electrorapide Starlink (Sada)",
+        "description": "https://outremers360.com/bassin-indien-appli/cyclone-chido-dans-louest-de-mayotte-des-habitants-sorganisent-pour-offrir-du-reseau-internet-a-la-population",
+        "category": "Internet Wifi"
+      },
+      "id": "M1MjA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.157762,
+          -12.921722
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Internet wifi près de Sud Auto Pièces (Malamani)",
+        "category": "Internet Wifi"
+      },
+      "id": "cyMzQ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.143689,
+          -12.890555
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Internet Wifi Starlink (Poroani)",
+        "description": "Wifi : Groupe SOPRAA Starlink\nPendant 24h (noté le 22/12/2024 à 12h36 heure de paris)",
+        "category": "Internet Wifi"
+      },
+      "id": "I3NjM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.228814,
+          -12.756976
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Le Quartz (Wifi) - Haut Vallon",
+        "category": "Internet Wifi"
+      },
+      "id": "UxMjU"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.150158,
+          -12.936166
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Mairie de chirongui (Wifi)",
+        "category": "Internet Wifi"
+      },
+      "id": "U0NTk"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.116215,
+          -12.844163
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Manga Market (Wifi)",
+        "description": "Code : BONJOUR10",
+        "category": "Internet Wifi"
+      },
+      "id": "c2MzA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.099475,
+          -12.849534
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "May Game (Wifi)",
+        "category": "Internet Wifi"
+      },
+      "id": "UwOTM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.233269,
+          -12.78338
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Samani Concept (Wifi) - M'Gombani",
+        "category": "Internet Wifi"
+      },
+      "id": "I5MDI"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.146205,
+          -12.936717
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Stade de Chirongui (Wifi)",
+        "description": "Position du point approximative. Renseignez vous auprès de la population.",
+        "category": "Internet Wifi"
+      },
+      "id": "czNDU"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.093985,
+          -12.899957
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Starlink à Hagnoundrou",
+        "description": "Localisation non précise, renseignez vous auprès de la population",
+        "category": "Internet Wifi"
+      },
+      "id": "cyNzU"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.270002,
+          -12.789648
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Starlink Résidence Vili Vili",
+        "description": "La résidence Vili Vili met à disposition gratuitement sa connexion wifi Starlink et la possibilité de charger les portables tous les jours de 8h à 11h et de 14h à 18h.\nNombre de places maximum 10 personnes en simultané.\nPour accéder, vous sonnez au 14 rue de l'ancienne mairie à Labattoir pour que l'on vous ouvre.\n",
+        "category": "Internet Wifi"
+      },
+      "id": "c2Mjc"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.128891,
+          -12.840083
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Starlink Sopraa",
+        "description": "Wifi : Groupe SOPRAA\nCode : mayotte24",
+        "category": "Internet Wifi"
+      },
+      "id": "A0ODQ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.113962,
+          -12.789763
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Starlink Tennis de Tsingoni",
+        "description": "Réseau : DIGIT\nCode : monwifi976",
+        "category": "Internet Wifi"
+      },
+      "id": "kwNDY"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.058982,
+          -12.723036
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Wifi+chargement portable chez Coustow barbershop",
+        "description": "Infos sur place",
+        "category": "Internet Wifi"
+      },
+      "id": "I2MzY"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.193291,
+          -12.913155
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Réseau mobile Bouygues  (Bandrélé)",
+        "description": "Position du point approximative, renseignez vous auprès de la population",
+        "category": "Réseau mobile Bouygues"
+      },
+      "id": "U4MjE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.083781,
+          -12.961359
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Réseau mobile Bouygues près de N'Gouja",
+        "description": "Les clientsde Bouygues captent mieux !",
+        "category": "Réseau mobile Bouygues"
+      },
+      "id": "Y5MTE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.256462,
+          -12.782329
+        ],
+        "type": "Point"
+      },
+      "properties": {},
+      "id": "IxMTA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.272748,
+          -12.789203
+        ],
+        "type": "Point"
+      },
+      "properties": {},
+      "id": "I0NDg"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.28219,
+          -12.765933
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Badamiers MTM (SFR)",
+        "category": "Réseau mobile SFR"
+      },
+      "id": "A0OTA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.227902,
+          -12.778384
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "CHM Mamoudzou (SFR)",
+        "category": "Réseau mobile SFR"
+      },
+      "id": "c5ODk"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.225456,
+          -12.770202
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Kawéni Est (SFR)",
+        "category": "Réseau mobile SFR"
+      },
+      "id": "U5NjQ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.227988,
+          -12.766226
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Kawéni ZI Nel (SFR)",
+        "category": "Réseau mobile SFR"
+      },
+      "id": "cxMzc"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.203762,
+          -12.73747
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Koungou (SFR)",
+        "category": "Réseau mobile SFR"
+      },
+      "id": "E5NzQ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.23406,
+          -12.781251
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Mahabou (SFR)",
+        "category": "Réseau mobile SFR"
+      },
+      "id": "YwNTc"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.22934,
+          -12.778573
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Mamoudzou (SFR)",
+        "description": "Position du point approximative, renseignez vous auprès de la population",
+        "category": "Réseau mobile SFR"
+      },
+      "id": "Y2MTc"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.227237,
+          -12.758357
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Massakini (SFR)",
+        "description": "Position approximative du point",
+        "category": "Réseau mobile SFR"
+      },
+      "id": "I5NTU"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.178185,
+          -12.731317
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Miangani (réseau SFR)",
+        "description": "position approximative",
+        "category": "Réseau mobile SFR"
+      },
+      "id": "g0MjU"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.217366,
+          -12.783888
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Mtsapéré (SFR)",
+        "category": "Réseau mobile SFR"
+      },
+      "id": "IxMTk"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.123478,
+          -12.979405
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Réseau mobile SFR (orange)",
+        "category": "Réseau mobile SFR"
+      },
+      "id": "IyMzk"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.106859,
+          -12.956341
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Réseau mobile SFR par endroits",
+        "description": "la localisation du point est approximative, renseingez vous auprès de la population",
+        "category": "Réseau mobile SFR"
+      },
+      "id": "c1MzM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.084567,
+          -12.672112
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Réseau SFR au niveau du radar",
+        "category": "Réseau mobile SFR"
+      },
+      "id": "kzMDQ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.194235,
+          -12.912695
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Bandrélé (orange)",
+        "description": "Réseau mobile orange\nPosition du point approximative, renseignez vous auprès de la population",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "kyODk"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.114648,
+          -12.836469
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Chiconi (orange)",
+        "description": "Réseau mobile orange\nPosition du point approximative, renseignez vous auprès de la population",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "kxMDY"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.186467,
+          -12.844712
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Dembéni (orange)",
+        "description": "Réseau mobile orange\nPosition du point approximative, renseignez vous auprès de la population",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "U4NTE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.206208,
+          -12.735545
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Koungou (orange)",
+        "description": "Réseau mobile orange\nPosition du point approximative, renseignez vous auprès de la population",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "c3ODQ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.228181,
+          -12.780372
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Mamoudzou (orange)",
+        "description": "Réseau mobile orange\nPosition du point approximative, renseignez vous auprès de la population",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "IyMjQ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.140247,
+          -12.8508
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Ouangani (orange)",
+        "description": "Réseau mobile orange\nPosition du point approximative, renseignez vous auprès de la population",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "c4MDY"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.275302,
+          -12.79841
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "Réseau mobile orange\nPosition du point approximative, renseignez vous auprès de la population",
+        "name": "Pamandzi (orange)",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "k1ODA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.256076,
+          -12.781921
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Pamandzi (orange)",
+        "description": "Réseau mobile orange\nPosition du point approximative, renseignez vous auprès de la population",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "Y1Nzg"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.103662,
+          -12.686295
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Point de vue Handréma (réseau mobile orange)",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "YyNzc"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.106242,
+          -12.685149
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Point de vue Handréma (réseau mobile orange)",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "c1MTQ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.093682,
+          -12.901693
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Réseau au niveau du foyer de mointatrindri (orange)",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "U1NTU"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.09892,
+          -12.850891
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Réseau mobile fonctionne de mieux en mieux",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "c2MTI"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.127662,
+          -12.789287
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Réseau mobile mroalé",
+        "description": "Source : discord #mroalé (22/12/2024)",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "IwMDA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.127287,
+          -12.96207
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "réseau mobile orange (choungui)",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "M3Mjc"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.107868,
+          -12.9554
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Réseau mobile Orange (Kani Kéli)",
+        "description": "Position du point approximative",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "Q3NzU"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.124197,
+          -12.979865
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Réseau mobile orange (Mronabéja)",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "YzMzA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.086045,
+          -12.761329
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Réseau mobile orange (Mtsangamouji)",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "M2ODY"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.201423,
+          -12.89341
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Réseau mobile orange (Nyambadao)",
+        "description": "Secteur Bandrajou. Source discord.",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "c0MTU"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.137587,
+          -12.93936
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Réseau mobile orange Tsimkoura",
+        "description": "Source discord situation mayotte #tsimkoura",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "k4Mzc"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.141985,
+          -12.893159
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Réseau orange (poroani)",
+        "description": "Source : discord situation #poroani",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "IzNjU"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.089328,
+          -12.922389
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Réseau près du collège",
+        "description": "Réseau était le 21/12/2024 entre 18h et 20h",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "k4NTM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.174923,
+          -12.836636
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Réseau téléphonique sur Tsaranano",
+        "description": "Source fb IRM",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "gxMjU"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.102289,
+          -12.851009
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Sada",
+        "description": "Réseau mobile orange\nPosition du point approximative, renseignez vous auprès de la population",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "g0MjI"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.107197,
+          -12.844667
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Sada",
+        "description": "Réseau mobile orange\nPosition du point approximative, renseignez vous auprès de la population",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "A1ODk"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.103244,
+          -12.844654
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Sada",
+        "description": "Réseau mobile orange\nPosition du point approximative, renseignez vous auprès de la population",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "E0NTM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.167928,
+          -12.728429
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Télécommunication Longoni",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "czNzk"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.101892,
+          -12.789255
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Tsingoni (réseau mobile orange)",
+        "description": "Réseau mobile orange\nPosition du point approximative, renseignez vous auprès de la population",
+        "category": "Réseau mobile Orange"
+      },
+      "id": "c4OTQ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.102892,
+          -12.844811
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Electricité",
+        "description": "https://outremers360.com/bassin-indien-appli/cyclone-chido-dans-louest-de-mayotte-des-habitants-sorganisent-pour-offrir-du-reseau-internet-a-la-population",
+        "category": "Électricité par endroits"
+      },
+      "id": "gzMDU"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.100336,
+          -12.848624
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Électricité",
+        "description": "Une partie de la population en bas possède de l'électricité",
+        "category": "Électricité par endroits"
+      },
+      "id": "YzMTc"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.189546,
+          -12.844722
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Electricité à dembéni",
+        "description": "",
+        "category": "Électricité par endroits"
+      },
+      "id": "Y2OTE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.112261,
+          -12.83615
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Electricité Chiconi dans certains quartier",
+        "description": "Electricité : place sicotram, coconi et quartier kavani mairie\n\nQuartier Amboungou Bé et quartier pauvre pas encore",
+        "category": "Électricité par endroits"
+      },
+      "id": "AzMjM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.138552,
+          -12.93912
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Electricité par endroit",
+        "description": "Source : discord situation #tsimkoura",
+        "category": "Électricité par endroits"
+      },
+      "id": "I5MTY"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.1241,
+          -12.979154
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Electricité par endroit (Mronabéja)",
+        "description": "Source : groupe whatsapp",
+        "category": "Électricité par endroits"
+      },
+      "id": "M1NzY"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.194364,
+          -12.914473
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Electricité par endroits (Bandrélé)",
+        "description": "Message de Tiphaine sur facebook, \"l'electricité est revenue à Bandrélé, PRESQUE partout, il faut que les gens débranchent les choses qui ont pris l'eau pour éviter les sautes chez eux.\"",
+        "category": "Électricité par endroits"
+      },
+      "id": "g0NzM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.199454,
+          -12.815991
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Electricité par endroits (Tsoundzou 2)",
+        "description": "l’électricité à Tzondzou II en bas pas dans les hauteurs",
+        "category": "Électricité par endroits"
+      },
+      "id": "U0NjQ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.112009,
+          -12.96481
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Électricité par endroits à Kani Bé",
+        "category": "Électricité par endroits"
+      },
+      "id": "E5MDc"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.103898,
+          -12.926195
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Electricité serait revenu à Mzouazia",
+        "category": "Électricité par endroits"
+      },
+      "id": "I3MDk"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.058883,
+          -12.723047
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Possibilité de recharger chez Coustow Barber",
+        "category": "Électricité par endroits"
+      },
+      "id": "M2Nzk"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.106291,
+          -12.955839
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Une partie de Kani-Kéli a de l'électricité",
+        "category": "Électricité par endroits"
+      },
+      "id": "I2MTg"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.138144,
+          -12.940197
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "L'eau est revenu mais pas de manière constante.\nSource : discord situation #tsimkoura",
+        "category": "Point d'Eau"
+      },
+      "id": "U4ODI"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.189911,
+          -12.845308
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "Eau à dembéni",
+        "category": "Point d'Eau"
+      },
+      "id": "MyOTA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.221636,
+          -12.78461
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Cavani stade",
+        "category": "Point d'Eau"
+      },
+      "id": "EyNDE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.113018,
+          -12.836134
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Chiconi",
+        "description": "Ouverture le 20/12/2024",
+        "category": "Point d'Eau"
+      },
+      "id": "A2NjM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.149989,
+          -12.935983
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Chirongui",
+        "description": "Eau courante mais pas partout\nChirongui village : ouverture le 20/12/2024",
+        "category": "Point d'Eau"
+      },
+      "id": "M0MjY"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.119948,
+          -12.721689
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Dzoumogné",
+        "description": "Point ouverture le 20/12/2024",
+        "category": "Point d'Eau"
+      },
+      "id": "Y1Mzc"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.158583,
+          -12.920768
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Eau courante (Malamani)",
+        "category": "Point d'Eau"
+      },
+      "id": "AxNTY"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.097632,
+          -12.852578
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Eau courante (Sada)",
+        "description": "Plusieurs coupure dans la journée\nOuverture le 20/12/2024",
+        "category": "Point d'Eau"
+      },
+      "id": "M3NjQ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.22522,
+          -12.780184
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Eau courante mais pas partout (Mamoudzou)",
+        "category": "Point d'Eau"
+      },
+      "id": "A2NTY"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.28101,
+          -12.790626
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Eau courante mais pas partout (Petite Terre)",
+        "description": "Four à chaux\nRond point Shopi\nAéroport",
+        "category": "Point d'Eau"
+      },
+      "id": "U0NjI"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.069298,
+          -12.697649
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Eau de temps en temps",
+        "description": "Source : discord # info géographique",
+        "category": "Point d'Eau"
+      },
+      "id": "AyMjE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.105464,
+          -12.95633
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Eau kani-kéli",
+        "category": "Point d'Eau"
+      },
+      "id": "UzMzY"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.093899,
+          -12.900397
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Eau robinet",
+        "description": "Source discord : channel moinatrindri Eau pas potable mais a coulé le 21/12/2024 entre 14h et 18h (faible début)",
+        "category": "Point d'Eau"
+      },
+      "id": "gyNjM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.128671,
+          -12.788387
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Eau robinet revenue",
+        "description": "Source discord situation (22/12/2024)",
+        "category": "Point d'Eau"
+      },
+      "id": "A1MDg"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.141237,
+          -12.938623
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Ecole primaire (Tsimkoura)",
+        "category": "Point d'Eau"
+      },
+      "id": "Y4MDE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.229983,
+          -12.75549
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Hauts vallons",
+        "description": "Ouverture le 20/12/2024",
+        "category": "Point d'Eau"
+      },
+      "id": "M5MjE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.131493,
+          -12.823727
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Kahani",
+        "description": "Ouverture le 20/12/2024",
+        "category": "Point d'Eau"
+      },
+      "id": "cxNjk"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.163507,
+          -12.734373
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Longoni",
+        "description": "Ouverture 20/12/2024",
+        "category": "Point d'Eau"
+      },
+      "id": "gxMTM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.152376,
+          -12.904742
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Miréréni",
+        "description": "Ouverture le 20/12/2024",
+        "category": "Point d'Eau"
+      },
+      "id": "YyNzQ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.153476,
+          -12.92837
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Mramadoudou",
+        "description": "Ouverture le 20/12/2024",
+        "category": "Point d'Eau"
+      },
+      "id": "k3MDM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.108361,
+          -12.689704
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Mtsangamboua",
+        "description": "Ouverture le 20/12/2024",
+        "category": "Point d'Eau"
+      },
+      "id": "Y0NTQ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.141921,
+          -12.892145
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Poroani : eau quartier 100 villa et lotissement",
+        "description": "Position du point approximative",
+        "category": "Point d'Eau"
+      },
+      "id": "Y4MTE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.193012,
+          -12.912235
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Rampe d'eau",
+        "category": "Point d'Eau"
+      },
+      "id": "g5OTg"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.089795,
+          -12.924297
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Rampe d'eau (Bambo-Ouest)",
+        "description": "Position du point approximative. Demandez renseignement à la population.",
+        "category": "Point d'Eau"
+      },
+      "id": "M1MDA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.101913,
+          -12.944526
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Rampe d'eau (M'Bouanatsa)",
+        "description": "Position du point approximative. Renseignez-vous après de la population.",
+        "category": "Point d'Eau"
+      },
+      "id": "I1OTI"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.17444,
+          -12.9623
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Rampe d'eau (Mtsamoudou)",
+        "description": "Position du point approximative. Renseignez vous auprès de la population.",
+        "category": "Point d'Eau"
+      },
+      "id": "gzNjA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.220263,
+          -12.773341
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Village de kawéni",
+        "description": "Ouverture le 20/12/2024",
+        "category": "Point d'Eau"
+      },
+      "id": "U5Mjg"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.264163,
+          -12.787738
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Vétérinaire PT",
+        "description": "Appelez entre 15h et 17h pour prendre rdv",
+        "category": "Vétérinaire"
+      },
+      "id": "I1NTU"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.061884,
+          -12.723949
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Citerne d'eau à Acoua",
+        "description": "Position du point approximative\n[[https://www.facebook.com/Prefet976/posts/pfbid02RUZMMi31AnKdv27VabcJm2UHnKa98KomvKKqLWrTwHjG9XKftTEDaxx93fznejmAl?__cft__[0]=AZVyW7q_x0xmLkGdvdUVwhlpslPoS9XBMroCNJsDA1_QE9Sz5SGUqRppezla9EMMYQ7QuCjm06x5SAteEh8roiBEXGTDD02OLuKPH6jrXwPTWhI7_unJ0FAztWJgi9k8YpRJPOOQOEHCsFqCZPmtjkmJIWepEqqAssTYvbcYyVYrqV30PP4bYFmYwiFL6LZbEtRYhV4YeszOEe8XPJ0_fab4kJy6_3cGq5UV1lBjdXQgHA&__tn__=%2CO*F|Source: communiqué du préfet]]",
+        "category": "Citernes d'eau"
+      },
+      "id": "YyMDI"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.113339,
+          -12.832473
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Citerne d'eau à Chiconi",
+        "description": "Position du point approximative\n[[https://www.facebook.com/Prefet976/posts/pfbid02RUZMMi31AnKdv27VabcJm2UHnKa98KomvKKqLWrTwHjG9XKftTEDaxx93fznejmAl?__cft__[0]=AZVyW7q_x0xmLkGdvdUVwhlpslPoS9XBMroCNJsDA1_QE9Sz5SGUqRppezla9EMMYQ7QuCjm06x5SAteEh8roiBEXGTDD02OLuKPH6jrXwPTWhI7_unJ0FAztWJgi9k8YpRJPOOQOEHCsFqCZPmtjkmJIWepEqqAssTYvbcYyVYrqV30PP4bYFmYwiFL6LZbEtRYhV4YeszOEe8XPJ0_fab4kJy6_3cGq5UV1lBjdXQgHA&__tn__=%2CO*F|Source: communiqué du préfet]]",
+        "category": "Citernes d'eau"
+      },
+      "id": "U3NTM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.148122,
+          -12.937854
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Citerne d'eau à Chirongui",
+        "description": "Position du point approximative\n[[https://www.facebook.com/Prefet976/posts/pfbid02RUZMMi31AnKdv27VabcJm2UHnKa98KomvKKqLWrTwHjG9XKftTEDaxx93fznejmAl?__cft__[0]=AZVyW7q_x0xmLkGdvdUVwhlpslPoS9XBMroCNJsDA1_QE9Sz5SGUqRppezla9EMMYQ7QuCjm06x5SAteEh8roiBEXGTDD02OLuKPH6jrXwPTWhI7_unJ0FAztWJgi9k8YpRJPOOQOEHCsFqCZPmtjkmJIWepEqqAssTYvbcYyVYrqV30PP4bYFmYwiFL6LZbEtRYhV4YeszOEe8XPJ0_fab4kJy6_3cGq5UV1lBjdXQgHA&__tn__=%2CO*F|Source: communiqué du préfet]]",
+        "category": "Citernes d'eau"
+      },
+      "id": "E3NDA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.183989,
+          -12.843279
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Citerne d'eau à Dembéni",
+        "description": "Position du point approximative\nSource : [[https://lejournaldemayotte.yt/2024/12/26/point-de-situation-pour-ce-jeudi-26-decembre-distributions-deau-et-de-nourriture/|Article du JDM du 26/12/2024]]",
+        "category": "Citernes d'eau"
+      },
+      "id": "E4MTA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.196724,
+          -12.867535
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Citerne d'eau à Hajangua",
+        "description": "Position du point approximative\nSource : [[https://lejournaldemayotte.yt/2024/12/26/point-de-situation-pour-ce-jeudi-26-decembre-distributions-deau-et-de-nourriture/|Article du JDM du 26/12/2024]]",
+        "category": "Citernes d'eau"
+      },
+      "id": "U4Mjc"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.215521,
+          -12.881425
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Citerne d'eau à Hamouro",
+        "description": "Position du point approximative\nSource : [[https://lejournaldemayotte.yt/2024/12/26/point-de-situation-pour-ce-jeudi-26-decembre-distributions-deau-et-de-nourriture/|Article du JDM du 26/12/2024]]",
+        "category": "Citernes d'eau"
+      },
+      "id": "Q2NTY"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.192347,
+          -12.845151
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Citerne d'eau à Iloni",
+        "description": "Position du point approximative\nSource : [[https://lejournaldemayotte.yt/2024/12/26/point-de-situation-pour-ce-jeudi-26-decembre-distributions-deau-et-de-nourriture/|Article du JDM du 26/12/2024]]",
+        "category": "Citernes d'eau"
+      },
+      "id": "A4NzM"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.067849,
+          -12.700255
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Citerne d'eau à Mtsamboro",
+        "description": "Position du point approximative\n[[https://www.facebook.com/Prefet976/posts/pfbid02RUZMMi31AnKdv27VabcJm2UHnKa98KomvKKqLWrTwHjG9XKftTEDaxx93fznejmAl?__cft__[0]=AZVyW7q_x0xmLkGdvdUVwhlpslPoS9XBMroCNJsDA1_QE9Sz5SGUqRppezla9EMMYQ7QuCjm06x5SAteEh8roiBEXGTDD02OLuKPH6jrXwPTWhI7_unJ0FAztWJgi9k8YpRJPOOQOEHCsFqCZPmtjkmJIWepEqqAssTYvbcYyVYrqV30PP4bYFmYwiFL6LZbEtRYhV4YeszOEe8XPJ0_fab4kJy6_3cGq5UV1lBjdXQgHA&__tn__=%2CO*F|Source: communiqué du préfet]]",
+        "category": "Citernes d'eau"
+      },
+      "id": "I0NDI"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.082312,
+          -12.759697
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Citerne d'eau à Mtsangamouji",
+        "description": "Position du point approximative\n[[https://www.facebook.com/Prefet976/posts/pfbid02RUZMMi31AnKdv27VabcJm2UHnKa98KomvKKqLWrTwHjG9XKftTEDaxx93fznejmAl?__cft__[0]=AZVyW7q_x0xmLkGdvdUVwhlpslPoS9XBMroCNJsDA1_QE9Sz5SGUqRppezla9EMMYQ7QuCjm06x5SAteEh8roiBEXGTDD02OLuKPH6jrXwPTWhI7_unJ0FAztWJgi9k8YpRJPOOQOEHCsFqCZPmtjkmJIWepEqqAssTYvbcYyVYrqV30PP4bYFmYwiFL6LZbEtRYhV4YeszOEe8XPJ0_fab4kJy6_3cGq5UV1lBjdXQgHA&__tn__=%2CO*F|Source: communiqué du préfet]]",
+        "category": "Citernes d'eau"
+      },
+      "id": "MzNDE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          45.211852,
+          -12.80249
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Citerne d'eau à Passamainty",
+        "description": "Position du point approximative\nSource : [[https://lejournaldemayotte.yt/2024/12/26/point-de-situation-pour-ce-jeudi-26-decembre-distributions-deau-et-de-nourriture/|Article du JDM du 26/12/2024]]",
+        "category": "Citernes d'eau"
+      },
+      "id": "EzOTU"
+    }
+  ]
+}

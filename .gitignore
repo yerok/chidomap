@@ -28,5 +28,6 @@ data/*
 
 # Inclure uniquement partial_chido_mayotte.json
 !data/partial_chido_mayotte.json
+!data/chido_mayotte.json
 misc
 tmp
