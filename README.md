@@ -1,4 +1,3 @@
-Voici un README.md complet et détaillé pour ton projet, basé sur les informations que tu m'as fournies :
 
 ---
 
