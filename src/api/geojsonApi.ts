@@ -8,7 +8,7 @@ const API_URL = 'http://127.0.0.1:3000/api';
 // Récupérer les données GeoJSON
 export const getGeojsonData = async () => {
   try {
-    const response = await axios.get(`${API_URL}/geojson`);
+    const response = await axios.get(`${API_URL}/geojson/get-geojson`);
     return response.data;
   } catch (error) {
     console.error('Error fetching GeoJSON data:', error);
@@ -22,7 +22,7 @@ export const sendGeojsonData = async (geojsonData: FeatureCollection<Geometry, G
     console.log(geojsonData);
     
     try {
-      const response = await axios.post('http://localhost:3000/api/upload-geojson', geojsonData);
+      const response = await axios.post('http://localhost:3000/api/geojson/upload-geojson', geojsonData);
       console.log('Données GeoJSON insérées:', response.data);
     } catch (error) {
       console.error('Erreur lors de l\'envoi des données GeoJSON:', error);
@@ -30,31 +30,28 @@ export const sendGeojsonData = async (geojsonData: FeatureCollection<Geometry, G
   };
   
 
-// Ajouter un commentaire
-export const addComment = async (featureId: string, comment: string) => {
-  try {
-    const response = await axios.post(`${API_URL}/comments`, {
-      featureId,
-      comment,
-    });
-    return response.data;
-  } catch (error) {
-    console.error('Error adding comment:', error);
-    throw error;
-  }
-};
+export const upVote = async (id: string) => {
+    try {
+        
+        const response = await fetch(`${API_URL}/features/${id}/upvote`, { method: "POST" });
+        if (response.ok) {
+            const data = await response.json();
+            return data.properties.upvotes
+        }
+    } catch (error) {
+        console.error("Erreur lors de l'upvote :", error);
+    }
+  };
 
-// Upvote or downvote
-export const voteOnFeature = async (featureId: string, voteType: string) => {
-  try {
-    const response = await axios.post(`${API_URL}/vote`, {
-      featureId,
-      voteType, // 'upvote' or 'downvote'
-    });
-    return response.data;
-  } catch (error) {
-    console.error('Error voting on feature:', error);
-    throw error;
-  }
-};
-
+  export const downVote = async (id: string) => {
+    try {
+        
+        const response = await fetch(`${API_URL}/features/${id}/downvote`, { method: "POST" });
+        if (response.ok) {
+            const data = await response.json();
+            return data.properties.downvotes
+        }
+    } catch (error) {
+        console.error("Erreur lors du downvote :", error);
+    }
+  };

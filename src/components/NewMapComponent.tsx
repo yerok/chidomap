@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setAllCategories, setNoCategories, toggleCategoryFilter } from '../store/slices/filtersSlice';
 import { RootState } from "../store"; // Chemin vers le store
 import axios from 'axios';
-import { getGeojsonData, sendGeojsonData } from '../api/geojsonApi';
+import { downVote, getGeojsonData, sendGeojsonData, upVote } from '../api/geojsonApi';
 
 
 
@@ -224,20 +224,17 @@ const MapComponent = () => {
         const fetchData = async () => {
 
             if (!geojsonData) {
-                
+
                 let data = await getGeojsonData()
-                if (!data) {
-                    data = await fetchGeoJSONData();
-                } 
-                setGeojsonData(data) // Déclenchera un nouveau rendu
-
-
                 
-
+                if (data.features.length == 0) {
+                    data = await fetchGeoJSONData();
+                    sendGeojsonData(data)
+                }
+                setGeojsonData(data) // Déclenchera un nouveau rendu
             }
         };
         fetchData()
-    // }, [geojsonData])
     }, [])
 
 
@@ -277,6 +274,7 @@ const MapComponent = () => {
                 }
 
 
+
                 const geoJsonLayer = L.geoJSON(geojsonData, {
                     filter: filterFeatures,
                     pointToLayer: (feature, latlng) => {
@@ -289,15 +287,93 @@ const MapComponent = () => {
 
                     },
                     onEachFeature: (feature, layer) => {
-                        if (feature.properties && feature.properties.name) {
-                            layer.bindPopup(`<div>
-                                    <h3>${feature.properties.name}</h3>
-                                    <p>${feature.properties.description}</p>
+                        if (feature.properties && feature.properties.name && layer) {
+
+                            console.log('feature');
+                            console.log(feature);
+                            
+                            console.log('feature.properties');
+                            console.log(feature.properties);
+                            
+                            const upvotes = feature.properties.upvotes || 0;
+                            const downvotes = feature.properties.downvotes || 0;
+
+                            const featureId = (feature as any)._id; // Désactiver temporairement la vérification de type
+
+                            // Contenu du popup avec les boutons de vote
+                            const popupContent = `
+                            <div>
+                                <h3>${feature.properties.name}</h3>
+                                <p>${feature.properties.description}</p>
+                                <div style="display: flex; justify-content: space-around; align-items: center; margin-top: 10px;">
+                                    <button class="upvote-btn" data-id="${featureId}" style="background: none; border: none; cursor: pointer;">
+                                        <i class="fas fa-thumbs-up" style="color: green; font-size: 18px;"></i>
+                                        <span class="upvote-count">${upvotes}</span>
+                                    </button>
+                                    <button class="downvote-btn" data-id="${featureId}" style="background: none; border: none; cursor: pointer;">
+                                        <i class="fas fa-thumbs-down" style="color: red; font-size: 18px;"></i>
+                                        <span class="downvote-count">${downvotes}</span>
+                                    </button>
                                 </div>
-                                `);
+                            </div>
+                        `;
+
+                            // Liaison du contenu à la popup
+                            layer.bindPopup(popupContent);
+
+                            // Gestion des clics sur les boutons après ouverture du popup
+                            layer.on("popupopen", () => {
+
+                                const popupElement = layer.getPopup()?.getElement();
+                                if (!popupElement) return; // Arrête si la popup n'existe pas
+
+                                // Boutons dans la popup
+                                const upvoteButton = popupElement.querySelector(".upvote-btn");
+                                const downvoteButton = popupElement.querySelector(".downvote-btn");
+
+                                // Gestion de l'upvote
+                                if (upvoteButton) {
+
+                                    upvoteButton.addEventListener("click", async () => {
+                                        const id = upvoteButton.getAttribute("data-id");
+                                        try {
+                                            const upVoteCountDB = await upVote(featureId)
+                                            const upvoteCount = upvoteButton.querySelector("span");
+
+                                            if (upvoteCount) {
+                                                upvoteCount.textContent = upVoteCountDB; // Mise à jour du compteur
+                                            }
+                                        } catch (error) {
+                                            console.error("Erreur lors de l'upvote :", error);
+                                        }
+                                    });
+                                }
+
+                                if (downvoteButton) {
+
+                                    // Gestion du downvote
+                                    downvoteButton.addEventListener("click", async () => {
+                                        const id = downvoteButton.getAttribute("data-id");
+                                        try {
+
+                                            const downVoteCountDB = await downVote(featureId)
+                                            const downvoteCount = downvoteButton.querySelector("span");
+
+                                            if (downvoteCount) {
+
+                                                downvoteCount.textContent = downVoteCountDB; // Mise à jour du compteur
+                                            }
+                                        } catch (error) {
+                                            console.error("Erreur lors du downvote :", error);
+                                        }
+                                    }
+                                    )
+                                }
+                            })
                         }
-                    },
-                });
+                    }
+                }
+                )
 
 
                 try {

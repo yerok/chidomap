@@ -41,21 +41,32 @@
   color: #888;
 }
 
+.upvote-btn, .downvote-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+}
+.upvote-count, .downvote-count {
+  font-weight: bold;
+  margin-left: 5px;
+  color: black
+}
 
-  .custom-control {
-    background: white;
-    border-radius: 5px;
-    padding: 5px;
-    font-family: Arial, sans-serif;
-  }
-  .custom-select {
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 5px;
-    font-size: 14px;
-    outline: none;
-  }
-  .custom-select:focus {
-    border-color: #007bff;
-  }
+.custom-control {
+  background: white;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: Arial, sans-serif;
+}
+.custom-select {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 14px;
+  outline: none;
+}
+.custom-select:focus {
+  border-color: #007bff;
+}
