@@ -13,6 +13,8 @@ import FeaturePopup from './PopUpComponent';
 import { createRoot } from 'react-dom/client';
 import { filterControl } from './filterControl'
 import 'leaflet.markercluster';
+import { countFieldOccurrences, normalizeApostrophes } from '../utils/utils';
+
 
 
 
@@ -22,6 +24,12 @@ const MapComponent = () => {
 
         if (category) {
             const { className, iconName, color } = categoryStyles[category] || {};
+
+            if (!className) {
+                // console.log(category);
+                // console.log(className, iconName, color );
+                
+            }
             return { className, iconName, color }
         } else return categoryStyles['Misc']
     };
@@ -64,18 +72,21 @@ const MapComponent = () => {
     }
     
     const fetchGeoJSONData = async (): Promise<FeatureCollection> => {
-        const response = await fetch('/src/data/partial_chido_mayotte.json'); // Remplacez par le chemin de votre fichier
+        const response = await fetch('/src/data/chido_mayotte.json'); // Remplacez par le chemin de votre fichier
         if (!response.ok) {
             throw new Error('Failed to fetch GeoJSON data');
         }
         const data = await response.json();
+
+        // On applique une regex pour remplacer tous les apostrophes par la même
+        const normalizedData = normalizeApostrophes(data)
 
         // Validation de base pour s'assurer que les données sont conformes
         if (data.type !== "FeatureCollection" || !Array.isArray(data.features)) {
             throw new Error('Invalid GeoJSON format');
         }
 
-        return data;
+        return normalizedData;
     };
 
     const baseMaps = {
@@ -134,18 +145,19 @@ const MapComponent = () => {
 
                 let data = await getGeojsonData()
 
+                console.log(countFieldOccurrences(data, 'category'))
+
                 if (data.features.length == 0) {
                     data = await fetchGeoJSONData();
                     sendGeojsonData(data)
                 }
                 setGeojsonData(data) // Déclenchera un nouveau rendu
+                countFieldOccurrences(data, 'property.category')
+
             }
         };
         fetchData()
     }, [])
-
-
-
 
     useEffect(() => {
 
@@ -156,6 +168,9 @@ const MapComponent = () => {
         const filterFeatures = (feature: Feature) => {
 
             if (feature.properties) {
+
+                // On enleve les points qui n'ont pas de noms
+                if (!feature.properties.name) return false
                 return !selectedCategories.includes(feature.properties.category);
             } else return false
         };
@@ -170,7 +185,6 @@ const MapComponent = () => {
 
                 map.addControl(filter);
                 L.control.layers(baseMaps).addTo(map);
-                console.log('create');
 
                 // Par défaut OSM
                 baseMaps['OpenStreetMap'].addTo(map)
@@ -201,15 +215,34 @@ const MapComponent = () => {
 
                         const icon = createCustomIcon(feature);
 
+                        if (!icon && feature.properties) {
+
+                            console.log(feature);
+                            //     console.log(feature.properties.name);
+                            //     console.log(feature.properties.description);
+                        }
+
                         const marker = icon
                             ? L.marker(latlng, { icon })
                             : L.marker(latlng);
+                            // const marker = icon
+                            // ? L.marker(latlng, { icon })
+                    // L.marker(latlng);
 
                         markers.addLayer(marker);
                         return marker
                     },
                     onEachFeature: (feature, layer) => {
+
                         if (feature.properties && feature.properties.name && layer) {
+
+                            // if (!feature.properties.category) {
+
+                            //     console.log(feature.properties.name);
+                            //     console.log(feature.properties.description);
+                                
+                            // }
+                            
 
                             const updatePopup = () => {
 
@@ -232,9 +265,6 @@ const MapComponent = () => {
                 )
 
                 try {
-
-                    console.log('markers');
-                    console.log(markers);
 
                     geoJsonLayer.addTo(map);
                     geojsonLayerRef.current = geoJsonLayer;

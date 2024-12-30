@@ -1,9 +1,10 @@
 import { Category, CategoryStyle } from "./types";
 
 export const categoryStyles: Record<Category, CategoryStyle> = {
-      "Citernes d’eau": {
-        className: "fa-water",
-        iconName: "water",
+      "Citernes d'eau": {
+        // className: "fa-faucet-drip",
+        className: "fa-faucet-drip",
+        iconName: "faucet-drip",
         color: "#3498db", // Bleu
       },
       "Vétérinaire": {
@@ -11,9 +12,9 @@ export const categoryStyles: Record<Category, CategoryStyle> = {
         iconName: "paw",
         color: "#2ecc71", // Vert
       },
-      "Point d’Eau": {
-        className: "fa-faucet",
-        iconName: "faucet",
+      "Point d'eau": {
+        className: "fa-droplet",
+        iconName: "droplet",
         color: "#5dade2", // Bleu clair
       },
       "Électricité par endroits": {

@@ -1,9 +1,9 @@
 import L from "leaflet";
 
 const categories = [
-    "Citernes d’eau",
+    "Citernes d'eau",
     "Vétérinaire",
-    "Point d’Eau",
+    "Point d'eau",
     "Électricité par endroits",
     "Réseau mobile Orange",
     "Réseau mobile SFR",

@@ -2265,7 +2265,7 @@
       },
       "properties": {
         "description": "L'eau est revenu mais pas de manière constante.\nSource : discord situation #tsimkoura",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "U4ODI"
     },
@@ -2280,7 +2280,7 @@
       },
       "properties": {
         "description": "Eau à dembéni",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "MyOTA"
     },
@@ -2295,7 +2295,7 @@
       },
       "properties": {
         "name": "Cavani stade",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "EyNDE"
     },
@@ -2311,7 +2311,7 @@
       "properties": {
         "name": "Chiconi",
         "description": "Ouverture le 20/12/2024",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "A2NjM"
     },
@@ -2327,7 +2327,7 @@
       "properties": {
         "name": "Chirongui",
         "description": "Eau courante mais pas partout\nChirongui village : ouverture le 20/12/2024",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "M0MjY"
     },
@@ -2343,7 +2343,7 @@
       "properties": {
         "name": "Dzoumogné",
         "description": "Point ouverture le 20/12/2024",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "Y1Mzc"
     },
@@ -2358,7 +2358,7 @@
       },
       "properties": {
         "name": "Eau courante (Malamani)",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "AxNTY"
     },
@@ -2374,7 +2374,7 @@
       "properties": {
         "name": "Eau courante (Sada)",
         "description": "Plusieurs coupure dans la journée\nOuverture le 20/12/2024",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "M3NjQ"
     },
@@ -2389,7 +2389,7 @@
       },
       "properties": {
         "name": "Eau courante mais pas partout (Mamoudzou)",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "A2NTY"
     },
@@ -2405,7 +2405,7 @@
       "properties": {
         "name": "Eau courante mais pas partout (Petite Terre)",
         "description": "Four à chaux\nRond point Shopi\nAéroport",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "U0NjI"
     },
@@ -2421,7 +2421,7 @@
       "properties": {
         "name": "Eau de temps en temps",
         "description": "Source : discord # info géographique",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "AyMjE"
     },
@@ -2436,7 +2436,7 @@
       },
       "properties": {
         "name": "Eau kani-kéli",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "UzMzY"
     },
@@ -2452,7 +2452,7 @@
       "properties": {
         "name": "Eau robinet",
         "description": "Source discord : channel moinatrindri Eau pas potable mais a coulé le 21/12/2024 entre 14h et 18h (faible début)",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "gyNjM"
     },
@@ -2468,7 +2468,7 @@
       "properties": {
         "name": "Eau robinet revenue",
         "description": "Source discord situation (22/12/2024)",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "A1MDg"
     },
@@ -2483,7 +2483,7 @@
       },
       "properties": {
         "name": "Ecole primaire (Tsimkoura)",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "Y4MDE"
     },
@@ -2499,7 +2499,7 @@
       "properties": {
         "name": "Hauts vallons",
         "description": "Ouverture le 20/12/2024",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "M5MjE"
     },
@@ -2515,7 +2515,7 @@
       "properties": {
         "name": "Kahani",
         "description": "Ouverture le 20/12/2024",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "cxNjk"
     },
@@ -2531,7 +2531,7 @@
       "properties": {
         "name": "Longoni",
         "description": "Ouverture 20/12/2024",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "gxMTM"
     },
@@ -2547,7 +2547,7 @@
       "properties": {
         "name": "Miréréni",
         "description": "Ouverture le 20/12/2024",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "YyNzQ"
     },
@@ -2563,7 +2563,7 @@
       "properties": {
         "name": "Mramadoudou",
         "description": "Ouverture le 20/12/2024",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "k3MDM"
     },
@@ -2579,7 +2579,7 @@
       "properties": {
         "name": "Mtsangamboua",
         "description": "Ouverture le 20/12/2024",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "Y0NTQ"
     },
@@ -2595,7 +2595,7 @@
       "properties": {
         "name": "Poroani : eau quartier 100 villa et lotissement",
         "description": "Position du point approximative",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "Y4MTE"
     },
@@ -2610,7 +2610,7 @@
       },
       "properties": {
         "name": "Rampe d'eau",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "g5OTg"
     },
@@ -2626,7 +2626,7 @@
       "properties": {
         "name": "Rampe d'eau (Bambo-Ouest)",
         "description": "Position du point approximative. Demandez renseignement à la population.",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "M1MDA"
     },
@@ -2642,7 +2642,7 @@
       "properties": {
         "name": "Rampe d'eau (M'Bouanatsa)",
         "description": "Position du point approximative. Renseignez-vous après de la population.",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "I1OTI"
     },
@@ -2658,7 +2658,7 @@
       "properties": {
         "name": "Rampe d'eau (Mtsamoudou)",
         "description": "Position du point approximative. Renseignez vous auprès de la population.",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "gzNjA"
     },
@@ -2674,7 +2674,7 @@
       "properties": {
         "name": "Village de kawéni",
         "description": "Ouverture le 20/12/2024",
-        "category": "Point d'Eau"
+        "category": "Point d'eau"
       },
       "id": "U5Mjg"
     },
